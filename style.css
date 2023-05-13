@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(244, 38%, 16%);
+    width: 1110px;
+    height: 445px;
+    display: flex;
+    border-radius: 7px 10px 10px 7px
+}
+
+.left {
+    width: 570px;
+    height: 445px ;
+}
+
+.text {
+    padding: 72px;
+}
+
+.text h1 {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.text h1 span {
+    color: hsl(277, 64%, 61%)
+}
+
+.text p {
+    padding-right: 50px;
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.945em;
+    font-weight: 400;
+    margin-top: 25px;
+    line-height: 170%;  
+}
+
+.right {
+    width: 555px;
+    height: 445px;
+}
+
+.img-card {
+    background-image: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(286, 40%, 58%);
+    background-blend-mode: overlay;
+    opacity: 0.5;
+    height: 100%;
+    border-radius: 0 10px 10px 0px;
+}
+
+.status {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 45px;   
+}
+
+#companies, #templates, #queries {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%)
+} 
+
+#queries {
+    margin-right: 20px;
+}
+
+.p {
+    text-transform: uppercase;
+    padding-top: 6px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.75em;
+    letter-spacing: 1px;
+}
+
+.attribution { 
+    margin: 40px;
+    padding-right: 40px;
+    font-size: 11px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: hsl(277, 64%, 61%)
+}
+
+.attribution a:hover { 
+    text-decoration: underline;
+    color: hsl(0, 0%, 100%)
+}
+
+
+
+@media (max-width:500px) {
+    
+    .card {
+       display: flex;
+       flex-direction: column-reverse;
+       width: 330px;
+       height: 800px;
+       border-radius: 10px;
+    }
+
+    .left {
+        width: 330px;
+        height: 560px ;
+    }
+
+    .right {
+        width: 330px;
+        height: 340px;
+    }
+
+    .img-card {
+        background-image: url(images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .text {
+        padding: 40px 25px;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 1.7em;
+    }
+
+    .text p {
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+
+    .status {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #companies, #templates, #queries {
+        padding-bottom: 30px;
+    }
+
+    #queries {
+        padding-left: 25px;
+    }
+}
+
+
